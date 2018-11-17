@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const {Client} = require('github-trend');
-const client = new Client({token: 'b14266c9a3e9f8a405b69c79fb583fa36cdf0794'});
+const client = new Client({token: ''}); // Add your GitHub token
 
 /* Global variables */
 var storeRepoOwner = [];
