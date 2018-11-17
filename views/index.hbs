@@ -1,0 +1,28 @@
+<h4>Welcome to {{title}}</h4>
+
+<table class="projects-table">
+    <tr>
+        <th>
+            Project name
+        </th>
+        <th>
+            Project owner
+        </th>
+        <th>
+            Stars
+        </th>
+    </tr>
+    {{#each projectName}}
+    <tr>
+        <td>
+            {{lookup ../projectName @index}}
+        </td>
+        <td>
+            {{lookup ../projectOwner @index}}
+        </td>
+        <td>
+            {{lookup ../projectStars @index}}
+        </td>
+    </tr>
+    {{/each}}
+</table>
